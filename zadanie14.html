@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+    <title>Cwiczenie 14</title>
+    <script language="JavaScript">
+        function rownanie() {
+            //autor: Bartosz Filipowicz
+            var A = prompt("podaj ilosc sztuk początkowych atomu (N0) =", "");
+            var B = prompt("podaj wartość t (w latach) =", "");
+            var C = prompt("podaj wartość T1/2 (w latach) =", "");
+            var n0_fil = parseFloat(A);
+            var t_fil = parseFloat(B);
+            var t12_fil = parseFloat(C);
+            var lambda = parseFloat();
+            var N = parseFloat();
+            lambda = + Math.log(2) / t12_fil + "";
+            N = + Math.exp(-lambda * t_fil) + "";
+            N = + N * n0_fil + "";
+            var wynik = "N0 = " + n0_fil + "[sztuk] <br> t = " + t_fil + "[lat] <br> T1/2 = " + t12_fil + "[lat] <br> Lambda = " + lambda + "[1/rok] <br> N = " + N + "[sztuk] <br>";
+            wynik = wynik.fontcolor("green");
+            wynik = wynik.fontsize(7);
+            document.write(wynik);
+        }
+        function kod() {
+            window.open("zadanie14_kod.html", "zadanie 14 - kod", "toolbar=no,directories=no,menubar=no,height=800,width=1700,top=150,left=200");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" name="przycisk" value="Filipowicz zadanie 14" onclick="rownanie()">
+        <input type="button" name="przycisk" value="Filipowicz zadanie 14 kod" onclick="kod()">
+    </form>
+</body>
+</html>

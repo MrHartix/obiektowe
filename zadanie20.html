@@ -1,0 +1,54 @@
+﻿<html>
+<head>
+    <title>
+        Obliczenie pola oraz obwodu trapezu.
+    </title>
+    <script language="JavaScript">
+        function pow_filipowicz(a_fil, b_fil, h_fil) {
+            a_liczba = parseFloat(a_fil);
+            b_liczba = parseFloat(b_fil);
+            h_liczba = parseFloat(h_fil);
+            pole_wynik = ((a_liczba + b_liczba) * h_liczba) / 2;
+            document.getElementsByName('a_dana_fil')[0].value = pole_wynik.toFixed(2);
+            alert("pole = " + pole_wynik.toFixed(2) + " cm^2");
+            wprowadz_pole_fil.innerHTML = "pole = " + pole_wynik.toFixed(2) + " cm^2" + "<br>";
+        }
+        function obw_filipowicz(a_fil, b_fil, h_fil) {
+            a_liczba = parseFloat(a_fil);
+            b_liczba = parseFloat(b_fil);
+            h_liczba = parseFloat(h_fil);
+            obwod_wynik = (2 * Math.sqrt(Math.pow((Math.abs(a_liczba - b_liczba) / 2), 2) + (Math.pow(h_liczba, 2)))) + a_liczba + b_liczba;
+            document.getElementsByName('b_dana_fil')[0].value = obwod_wynik.toFixed(2);
+            alert("obwod = " + obwod_wynik.toFixed(2) + " cm");
+            wprowadz_obwod_fil.innerHTML = "obwod = " + obwod_wynik.toFixed(2) + "cm";
+        }
+    </script>
+</head>
+<body>
+    Obliczenie pola oraz obwodu trapez równoramiennego po podaniu górnej i dolnej podstawy oraz wysokości.
+    <br>
+    <br>
+    <form name="formularz" action="..." onsubmit="pow_filipowicz(this.pole.value,this.obw.value,this.wys.value);
+        obw_filipowicz(this.pole.value,this.obw.value,this.wys.value);return false">
+        Podaj a=
+        <input size="6" name="pole">
+        Podaj b=
+        <input size="6" name="obw">
+        Podaj h=
+        <input size="6" name="wys">
+        <br>
+        <br>
+        <input type="submit" value="oblicz">
+        <br>
+        <br>
+        pole =
+        <input size="6" name="a_dana_fil">
+        obwod =
+        <input size="6" name="b_dana_fil">
+    </form>
+    <table>
+        <tr id="wprowadz_pole_fil"></tr>
+        <tr id="wprowadz_obwod_fil"></tr>
+    </table>
+</body>
+</html>

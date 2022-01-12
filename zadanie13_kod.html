@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+</head>
+<body>
+    <textarea rows="40" cols="220" name="textdata">
+        <html>
+        <head>
+            <title>Cwiczenie 13</title>
+            <script language="JavaScript">
+                function rownanie() {
+                    var A = prompt("podaj wartość A =", "");
+                    var B = prompt("podaj wartość B =", "");
+                    var A_fil = parseFloat(A);
+                    var B_fil = parseFloat(B);
+                    var wynik = "(" + A_fil + " + " + B_fil + "^3 = " + A_fil + "^3 + 3 * ((" + A_fil + ")^" + B_fil + ") * (" + B_fil + ") + 3 * (" + A_fil + ") * ((" + B_fil + ")^" + B_fil + ") + " + B_fil + "^3 = " + (A_fil * A_fil * A_fil) + " + " + (3 * ((A_fil * A_fil) * 2)) + " + " + ((3 * A_fil) * (B_fil * B_fil)) + " + " + B_fil * B_fil * B_fil + " = " + ((A_fil * A_fil * A_fil) + (3 * ((A_fil * A_fil) * 2)) + ((3 * A_fil) * (B_fil * B_fil)) + B_fil * B_fil * B_fil) + "<br>";
+                    document.write(wynik);
+                }
+                function kod() {
+                    window.open("zadanie13_kod.html", "zadanie 13 - kod", "toolbar=no,directories=no,menubar=no,height=800,width=1700,top=150,left=200");
+                }
+            </script>
+        </head>
+        <body>
+            <form>
+                <input type="button" name="przycisk" value="Filipowicz zadanie 13" onclick="rownanie()">
+                <input type="button" name="przycisk" value="Filipowicz zadanie 13 kod" onclick="kod()">
+            </form>
+        </body>
+        </html>
+</textarea>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+    <title>
+        Obliczenie pola oraz obwodu prostokąta.
+    </title>
+    <script language="JavaScript">
+        function kat_filipowicz(odl_fil, s_fil) {
+            odl_liczba = parseFloat(odl_fil);
+            s_liczba = parseFloat(s_fil);
+            kat_fil = Math.sin((Math.sqrt(Math.pow(s_liczba, 2) - Math.pow(odl_liczba, 2))) / odl_liczba) * (180 / Math.PI);
+            document.getElementsByName('a_dana_fil')[0].value = kat_fil.toFixed(0);
+            alert("kąt = " + kat_fil.toFixed(0) + " stopni");
+        }
+        function h_filipowicz(odl_fil, s_fil) {
+            odl_liczba = parseFloat(odl_fil);
+            s_liczba = parseFloat(s_fil);
+            h_fil = Math.sqrt(Math.pow(s_liczba, 2) - Math.pow(odl_liczba, 2));
+            document.getElementsByName('b_dana_fil')[0].value = h_fil.toFixed(2);
+            alert("wysokość = " + h_fil.toFixed(2) + "");
+        }
+    </script>
+</head>
+<body>
+    Obliczenie pola oraz obwodu prostokąta.
+    <br>
+    <br>
+    <form name="formularz" action="..." onsubmit="kat_filipowicz(this.odleglosc.value,this.s.value);
+        h_filipowicz(this.odleglosc.value,this.s.value);return false">
+        Podaj odległość Dawida i Artura od samolotu =
+        <input size="6" name="odleglosc">
+        <br>
+        Podaj drogę samolotu aby był pionowo nad chłopcami =
+        <input size="6" name="s">
+        <br>
+        <br>
+        <input type="submit" value="oblicz">
+        <br>
+        <br>
+        kąt samolotu =
+        <input size="6" name="a_dana_fil">
+        <br>
+        <br>
+        wysokość samolotu będącego pionowo nad chłopcami =
+        <input size="6" name="b_dana_fil">
+    </form>
+</body>
+</html>

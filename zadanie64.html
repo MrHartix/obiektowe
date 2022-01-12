@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+    <title>
+        parzystosc
+    </title>
+    <script language="JavaScript">
+        function parzystosc(liczba_fil) {
+            liczba = parseFloat(liczba_fil);
+            if (liczba % 2 == 0) {
+                document.write("<font color=red size=3>liczba parzysta</font>" + "<br>");
+            }
+            if (liczba % 2 != 0) {
+                document.write("<font color=silver size=5>liczba nieparzysta</font>" + "<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="formularz" action="..." onsubmit="parzystosc(this.liczba_fil.value); return false">
+        <font color="black" size="6">podaj liczbę do sprawdzenia parzystości</font><br>
+        <input size="6" name="liczba_fil">
+        <br>
+        <input type="submit" value="Sprawdź">
+    </form>
+</body>
+</html>

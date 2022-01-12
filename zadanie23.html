@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+    <title>zadanie 23</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            color: #fff;
+            background-color: #19b9e6;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 5px #999;
+        }
+
+            .button:hover {
+                background-color: #1291b5;
+            }
+
+            .button:active {
+                background-color: #1291b5;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+    </style>
+    <script language="JavaScript">
+        function WinOpen_filipowicz1() {
+            window.open("przyklad3.html", "przykład 3", "toolbar=no,directories=no,menubar=no,height=300,width=700,top=300,left=500");
+        }
+        function WinOpen_filipowicz2() {
+            window.open("przyklad3_kod.html", "przykład 3 - kod", "toolbar=no,directories=no,menubar=no,height=450,width=800,top=300,left=500");
+        }
+        function WinOpen_filipowicz3() {
+            window.open("przyklad3_zewnetrzny_kod.html", "przykład 3 zewnętrzny - kod", "toolbar=no,directories=no,menubar=no,height=450,width=800,top=300,left=500");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" class="button" name="przycisk" value="przycisk 1" onclick="WinOpen_filipowicz1()">
+        <input type="button" class="button" name="przycisk" value="przycisk 2" onclick="WinOpen_filipowicz2()">
+        <input type="button" class="button" name="przycisk" value="przycisk 3" onclick="WinOpen_filipowicz3()">
+    </form>
+</body>
+</html>

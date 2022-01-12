@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+</head>
+<body>
+    <textarea rows="40" cols="200" name="textdata">
+    <html>
+        <head>
+            <title>Cwiczenie 8</title>
+            <script language="JavaScript">
+                function sekundy() {
+                    var D1_fil = prompt("dzień pierwszy=", "");
+                    var D2_fil = prompt("dzień drugi=", "");
+                    var suma;
+                    suma = D1_fil - D2_fil;
+                    suma = suma * 24 * 60 * 60;
+                    var wynik = "sekundy pomiędzy " + D1_fil + " dniem, a " + D2_fil + " dniem, wynosą " + suma + " sekund <br>";
+                    var wynik_col = wynik.fontcolor("green");
+                    var wynik_res = wynik_col.fontsize("37px");
+                    document.write(wynik_res);
+                    }
+                function kod() {
+                    window.open("zadanie8_kod.html", "zadanie 8 - kod", "toolbar=no,directories=no,menubar=no,height=800,width=1500,top=150,left=200");
+                    }
+            </script>
+        </head>
+        <body>
+            <form>
+                <input type="button" name="przycisk" value="Filipowicz zadanie 8" onclick="sekundy()">
+                <input type="button" name="przycisk" value="Filipowicz zadanie 8 kod" onclick="kod()">
+            </form>
+        </body>
+    </html>
+</textarea>
+</body>
+</html>

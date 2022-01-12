@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+</head>
+<body>
+    <textarea rows="40" cols="220" name="textdata">
+        <html>
+        <head>
+            <title>Cwiczenie 11</title>
+            <script language="JavaScript">
+                function egipskie() {
+                    var m = prompt("podaj wartość m =", "");
+                    var m_fil = parseFloat(m);
+                    var wynik = "koncowe rownanie to: <br> 1/" + m_fil + " = 1/" + (m_fil + 1) + " + 1/" + (m_fil * (m_fil + 1) + 1) + " + 1/" + ((m_fil * (m_fil + 1)) * (m_fil * (m_fil + 1) + 1)) + "<br>";
+                    document.write(wynik);
+                }
+                function kod() {
+                    window.open("zadanie11_kod.html", "zadanie 11 - kod", "toolbar=no,directories=no,menubar=no,height=800,width=1700,top=150,left=200");
+                }
+            </script>
+        </head>
+        <body>
+            <form>
+                <input type="button" name="przycisk" value="Filipowicz zadanie 11" onclick="egipskie()">
+                <input type="button" name="przycisk" value="Filipowicz zadanie 11 kod" onclick="kod()">
+            </form>
+        </body>
+        </html>
+</textarea>
+</body>
+</html>

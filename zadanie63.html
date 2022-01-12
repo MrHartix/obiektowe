@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+    <title>
+        wczytywanie koloru
+    </title>
+    <script language="JavaScript">
+        function jezeli(kolor_fil) {
+            kolor = kolor_fil.toLowerCase();
+            if (kolor == 1 || kolor == "czerwony") {
+                document.write("<font color=red size=7>wpisałes kolor czerwony</font>" + "<br>");
+            }
+            if (kolor == 2 || kolor == "niebieski") {
+                document.write("<font color=blue size=1>wpisałes kolor niebieski</font>" + "<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="formularz" action="..." onsubmit="jezeli(this.kol_fil.value); return false">
+        <font color="green" size="6">Menu</font><br>
+        <font color="red" size="5">1 - Czerwony</font><br>
+        <font color="blue" size="5">2 - Niebieski</font><br>
+        <input size="6" name="kol_fil">
+        <br>
+        <input type="submit" value="Sprawdź">
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+    <title>Cwiczenie 15</title>
+    <script language="JavaScript">
+        function rownanie() {
+            var A = prompt("podaj x1 =", "");
+            var B = prompt("podaj x2 =", "");
+            var x1_fil = parseFloat(A);
+            var x2_fil = parseFloat(B);
+            var y1 = parseFloat();
+            y1 = + Math.pow(x1_fil, 7 / 9) + "";
+            y1 = +y1 * 3 + "";
+            var y2 = parseFloat();
+            y2 = +((2 * Math.cos(x1_fil)) + (2 * Math.sin(x1_fil))) + "";
+            var y3 = parseFloat();
+            y3 = + (Math.cbrt(Math.pow(x1_fil, 5) + (2 * Math.pow(x2_fil, 4)))) * Math.abs(x1_fil - x2_fil) + "";
+            var wynik;
+            wynik = "wczytane liczby to <br>x1 = " + x1_fil + "&nbsp &nbsp &nbsp &nbsp x2 = " + x2_fil + "<br> y1 = " + y1 + "<br> y2 = " + y2 + "<br> y3 = " + y3 + "";
+            document.write(wynik);
+        }
+        function kod() {
+            window.open("zadanie15_kod.html", "zadanie 15 - kod", "toolbar=no,directories=no,menubar=no,height=800,width=1700,top=150,left=200");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" name="przycisk" value="Filipowicz zadanie 15" onclick="rownanie()">
+        <input type="button" name="przycisk" value="Filipowicz zadanie 15 kod" onclick="kod()">
+    </form>
+</body>
+</html>

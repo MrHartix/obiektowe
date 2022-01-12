@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+</head>
+<body>
+    <textarea rows="40" cols="220" name="textdata">
+        <html>
+        <head>
+            <title> Użycie fukcji </title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <div style="color:navy;font-size:50px;">
+                <script language="JavaScript">
+                    var a = parseFloat(prompt("a=", ""));
+                    var b = parseFloat(prompt("b=", ""));
+                    function odejmowanie_fil(a, b) {
+                        return a - b;
+                    }
+                    function mnozenie_fil(a, b) {
+                        return a * b;
+                    }
+                    function do_kwadratu_fil(a) {
+                        return a * a;
+                    }
+                    function reszta_z_dzielenia_a_przez_b_fil(a, b) {
+                        return a % b;
+                    }
+                    document.write(+ a + " - " + b + " = " + odejmowanie_fil(a, b) + "<br>" + a + " * " + b + " = " + mnozenie_fil(a, b) + "<br>" + a + " ^2 = " + do_kwadratu_fil(a) + "<br>" + a + " % " + b + " = " + reszta_z_dzielenia_a_przez_b_fil(a, b) + "<br>");
+                </script>
+            </div>
+        </body>
+        </html>
+    </textarea>
+</body>
+</html>

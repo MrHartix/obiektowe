@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+</head>
+<body>
+    <textarea rows="40" cols="200" name="textdata">
+        <html>
+        <head>
+            <title>Cwiczenie 9</title>
+            <script language="JavaScript">
+            function sekundy() {
+               var D1 = prompt("dzień pierwszy =", "");
+               var G1 = prompt("godzina pierwsza =", "");
+               var D2 = prompt("dzień drugi =", "");
+               var G2 = prompt("godzina druga =", "");
+               var D1_fil = parseFloat(D1);
+               var G1_fil = parseFloat(G1);
+               var D2_fil = parseFloat(D2);
+               var G2_fil = parseFloat(G2);
+               var suma;
+               suma = D1_fil - D2_fil;
+                 suma = suma - 1;
+                 suma = suma * 24;
+                 suma = suma + (24 - G2_fil);
+                suma = suma + G1_fil;
+                suma = suma * 60 * 60;
+                var wynik = "sekundy pomiędzy " + D1_fil + " dniem, godziną " + G1_fil + ", a " + D2_fil + " dniem, godziną " + G2_fil + " wynoszą " + suma + " sekund <br>";
+                var wynik_col = wynik.fontcolor("green");
+                var wynik_res = wynik_col.fontsize("37px");
+                document.write(wynik_res);
+                }
+                function kod() {
+                    window.open("zadanie9_kod.html", "zadanie 9 - kod", "toolbar=no,directories=no,menubar=no,height=900,width=900,top=300,left=500");
+            }
+            </script>
+        </head>
+        <body>
+            <form>
+                <input type="button" name="przycisk" value="Filipowicz zadanie 9" onclick="sekundy()">
+                <input type="button" name="przycisk" value="Filipowicz zadanie 9 kod" onclick="kod()">
+            </form>
+        </body>
+        </html>
+</textarea>
+</body>
+</html>
