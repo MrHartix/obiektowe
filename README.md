@@ -1,2 +1,2 @@
-# WebPageBF
-strona do ćwiczeń
+# obiektowe
+strona do ćwiczeń z pisaniem obiektowym
